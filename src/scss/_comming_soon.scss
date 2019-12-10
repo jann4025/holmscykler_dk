@@ -26,8 +26,8 @@
 
         .second-h1 {
             $min_font: 18px;
-        $max_font: 40px;
-        @include fluid-type($min_width, $max_width, $min_font, $max_font);
+            $max_font: 40px;
+            @include fluid-type($min_width, $max_width, $min_font, $max_font);
         }
     }
 
