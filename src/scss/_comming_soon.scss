@@ -14,6 +14,21 @@
         $min_font: 24px;
         $max_font: 50px;
         @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+        b{
+				background-image: linear-gradient(to right, transparent 50%, #10ac84 50%);
+				background-origin: 0;
+				background-size: 200% 50%;
+				background-repeat: repeat-x;
+				background-position: -100% 100%;
+				transition: background-position 0.5s;
+        }
+
+        .second-h1 {
+            $min_font: 18px;
+        $max_font: 40px;
+        @include fluid-type($min_width, $max_width, $min_font, $max_font);
+        }
     }
 
     &_headline2 {
