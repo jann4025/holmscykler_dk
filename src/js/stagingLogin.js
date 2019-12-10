@@ -18,10 +18,14 @@ class Login extends HTMLElement {
           width: 100% !important;
           background-color: #F7F7F7;
           margin: 0 auto;
-          border-radius: 2px;
+          border-radius: 5px;
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
           overflow: hidden;
           font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue", Arial, sans-serif;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
         .loginmodal-container h1 {
           text-align: center;
