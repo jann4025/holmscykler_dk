@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import ComingSoon from '../views/ComingSoon'
+import ComingSoon from '../views/ComingSoon';
 
 Vue.use(VueRouter);
 
