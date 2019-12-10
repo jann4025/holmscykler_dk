@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import ComingSoon from '../views/ComingSoon';
+import ComingSoon from "../views/ComingSoon";
 
 Vue.use(VueRouter);
 
@@ -13,7 +13,8 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  routes
+  routes,
+  mode: 'history'
 });
 
 export default router;
