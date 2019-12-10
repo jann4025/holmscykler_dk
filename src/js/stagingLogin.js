@@ -100,8 +100,8 @@ class Login extends HTMLElement {
         this.shadowRoot.querySelector("form").addEventListener("submit", e => {
             e.preventDefault();
             if (
-                this.shadowRoot.querySelector("input[name=usrname]").value === "Admin" &&
-                this.shadowRoot.querySelector("input[name=pass]").value === "holmsCyklerStaging!1"
+                this.shadowRoot.querySelector("input[name=usrname]").value === "admin" &&
+                this.shadowRoot.querySelector("input[name=pass]").value === "holmscykler!1"
             ) {
                 document.querySelector("#totally-delete-me").remove();
                 localStorage.setItem("holmscykler-totally-logged-in", true);
