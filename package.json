@@ -1,0 +1,24 @@
+{
+  "name": "holmscykler_dk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss-compile": "node-sass -rw src/scss/main.scss -o public/css",
+    "build": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jann4025/holmscykler_dk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jann4025/holmscykler_dk/issues"
+  },
+  "homepage": "https://github.com/jann4025/holmscykler_dk#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
