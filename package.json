@@ -1,0 +1,29 @@
+{
+  "name": "holmscykler_dk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run parcel",
+    "parcel": "parcel build *.html --public-url ./ -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jann4025/holmscykler_dk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jann4025/holmscykler_dk/issues"
+  },
+  "homepage": "https://github.com/jann4025/holmscykler_dk#readme",
+  "dependencies": {
+    "@actions/github": "^2.0.0",
+    "node-sass": "^4.13.0",
+    "scss-compile": "^0.1.7"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}

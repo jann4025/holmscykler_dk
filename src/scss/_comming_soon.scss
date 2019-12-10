@@ -1,0 +1,109 @@
+.coming-soon {
+    
+    &_content {
+        text-align: center;
+        width:100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    &_headline {
+        text-align: center;
+        $min_font: 24px;
+        $max_font: 50px;
+        @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+        b{
+				background-image: linear-gradient(to right, transparent 50%, #10ac84 50%);
+				background-origin: 0;
+				background-size: 200% 50%;
+				background-repeat: repeat-x;
+				background-position: -100% 100%;
+				transition: background-position 0.5s;
+        }
+
+        .second-h1 {
+            $min_font: 18px;
+            $max_font: 40px;
+            @include fluid-type($min_width, $max_width, $min_font, $max_font);
+        }
+    }
+
+    &_headline2 {
+        text-align: center;
+        $min_font: 14px;
+        $max_font: 25px;
+        @include fluid-type($min_width, $max_width, $min_font, $max_font);
+        margin-top: 2rem;
+        
+    }
+
+    .b-counter{
+        display:flex;
+        flex-flow: columns;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:center;
+      
+      .o-count-item{
+        display: inline-block;
+        padding: .8em 1.6em;
+        margin: 5px;
+        text-align: center;
+        border-radius: 3px;
+        font-family: 'Helvetica', sans-serif;
+        font-feature-settings: "tnum";
+        font-variant-numeric: tabular-nums;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 2em;
+      }
+      .o-count-item .number{
+        display: block;
+        font-size: 2em;
+        font-size: 14vmin;
+        font-weight: 700;
+        font-feature-settings: "tnum";
+        font-variant-numeric: tabular-nums;
+      }
+      .o-count-item .title{
+        display: block;
+        font-size: 0.8em;
+        color: #fff;
+        font-feature-settings: "tnum";
+        font-variant-numeric: tabular-nums;
+      }
+    }
+
+    &_contact {
+        display:flex;
+        flex-flow: columns;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:center;
+        width: 100%;
+        a {
+            color: whitesmoke;
+            margin-top: 1rem;
+            text-decoration: none;
+            display: inline;
+            width: max-content;
+            font-feature-settings: "tnum";
+            font-variant-numeric: tabular-nums;
+            $min_font: 14px;
+            $max_font: 18px;
+            @include fluid-type($min_width, $max_width, $min_font, $max_font);
+            
+            &:not(:last-of-type) {
+                margin-right: 2rem;
+            }
+
+            &:hover {
+                opacity: .7;
+                transition: .5s;
+            }
+        }
+    }
+}
+}
