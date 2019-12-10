@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss-compile": "node-sass -rw src/scss/main.scss -o public/css",
-    "build": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run parcel",
+    "parcel": "parcel build *.html --public-url ./ -d public"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,11 @@
   },
   "homepage": "https://github.com/jann4025/holmscykler_dk#readme",
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "@actions/github": "^2.0.0",
+    "node-sass": "^4.13.0",
+    "scss-compile": "^0.1.7"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
   }
 }
