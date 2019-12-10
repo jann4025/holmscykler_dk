@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run clear parcel ",
-    "clear": "rm -rf public/*",
+    "build": "npm run parcel",
     "parcel": "parcel build *.html --public-url ./ -d public"
   },
   "repository": {
