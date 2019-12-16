@@ -1,17 +1,68 @@
-var myHeaders = new Headers();
-myHeaders.append('content-type', 'text/plain');
-myHeaders.append('Authorization', 'Bearer 4450b4420e2ba67f1939cb8b89b6243a');
-
-var raw =
-  '{\n    "content": {\n        "customerid": 791403,\n        "agreedPrice": 0,\n        "id": 495015,\n        "cardno": "1420",\n        "autoincrementno": 1420,\n        "status": "awaiting",\n        "type": "repair",\n        "description": "\\n- Eftersyn\\n- Klinge for\\n- Krans\\n- Kæde",\n        "created": "2019-12-15 13:49:08",\n        "startTime": "2019-12-15 13:49:08",\n        "pickup": "2019-12-15 14:49:08",\n        "draft": 0,\n        "customerarticles": [],\n        "assignee": 1086,\n        "assigneeName": "Jannick Holm",\n        "createByUserId": null,\n        "totalPrice": null,\n        "numComments": 0,\n        "customerarticleids": [],\n        "customer": {\n            "id": 791403,\n            "createddate": "2019-12-13 14:06:29",\n            "name": "Jannick Holm",\n            "phone": "+4522228173",\n            "address": "Valby Langgade 30, 1th",\n            "city": "Valby",\n            "zipcode": "2500",\n            "email": "",\n            "vat": null,\n            "ean": null,\n            "lat": null,\n            "lng": null,\n            "economic_customernumber": null,\n            "note": null,\n            "country": "dk",\n            "draft": 0,\n            "tags": []\n        },\n        "payments": [],\n        "tags": [\n            {\n                "id": 5378,\n                "label": "Forespørgsel fra hjemmeside",\n                "color": "#ff0039"\n            }\n        ],\n        "tagids": [\n            5378\n        ]\n    },\n    "storeid": 634\n}';
-
-var requestOptions = {
-  method: 'POST',
-  headers: myHeaders,
-  body: raw
-};
-
-fetch('https://app.deltateq.com/api/tickets', requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
+// let data = {
+//   content: {
+//     customerid: 791403,
+//     agreedPrice: 0,
+//     id: 495015,
+//     cardno: '1420',
+//     autoincrementno: 1420,
+//     status: 'awaiting',
+//     type: 'repair',
+//     description: '\n- Eftersyn\n- Klinge for\n- Krans\n- Kæde',
+//     created: '2019-12-15 13:49:08',
+//     startTime: '2019-12-15 13:49:08',
+//     pickup: '2019-12-15 14:49:08',
+//     draft: 0,
+//     customerarticles: [],
+//     assignee: 1086,
+//     assigneeName: 'Jannick Holm',
+//     createByUserId: null,
+//     totalPrice: null,
+//     numComments: 0,
+//     customerarticleids: [],
+//     customer: {
+//       id: 791403,
+//       createddate: '2019-12-13 14:06:29',
+//       name: 'Jannick Holm',
+//       phone: '+4522228173',
+//       address: 'Valby Langgade 30, 1th',
+//       city: 'Valby',
+//       zipcode: '2500',
+//       email: '',
+//       vat: null,
+//       ean: null,
+//       lat: null,
+//       lng: null,
+//       economic_customernumber: null,
+//       note: null,
+//       country: 'dk',
+//       draft: 0,
+//       tags: []
+//     },
+//     payments: [],
+//     tags: [
+//       {
+//         id: 5378,
+//         label: 'Forespørgsel fra hjemmeside',
+//         color: '#ff0039'
+//       }
+//     ],
+//     tagids: [5378]
+//   },
+//   storeid: 634
+// };
+// const postData = JSON.stringify(data);
+// console.log(data);
+// fetch(
+//   'https://cors-anywhere.herokuapp.com/https://app.deltateq.com/api/tickets',
+//   {
+//     method: 'post',
+//     headers: {
+//       'Content-Type': 'text/plain; charset=utf-8',
+//       Authorization: 'Bearer 4450b4420e2ba67f1939cb8b89b6243a',
+//       'cache-control': 'no-cache'
+//     },
+//     body: postData
+//   }
+// )
+//   .then(res => res.json())
+//   .then(data => console.log(data));

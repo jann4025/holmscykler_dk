@@ -1,11 +1,30 @@
 header {
   width: 100%;
-  position: relative;
   z-index: 999;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  &.bg-black {
+    background-color: rgba($black, 1);
+  }
   .top-banner {
-    background: red;
+    background: whitesmoke;
+    padding: 0.5rem;
     width: 100%;
-    height: 200%;
+    .inner {
+      margin: auto;
+      max-width: 1200px;
+      p {
+        font-family: $headline;
+        color: $black;
+        cursor: pointer;
+        transition: all 0.2s;
+        width: max-content;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
   }
 
   .navigation {
@@ -14,9 +33,8 @@ header {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    padding: 2rem 0;
+    padding: 1rem 0;
     margin: auto;
-    z-index: 999;
     &_brand {
       font-family: $headline;
       font-weight: 800;
@@ -31,7 +49,7 @@ header {
       list-style: none;
       font-family: $body;
       font-weight: 600;
-      max-width: 400px;
+      // max-width: 400px;
       margin-left: auto;
 
       &_link {

@@ -1,0 +1,22 @@
+button {
+  background: linear-gradient(90deg, #edb64e 0%, #e79d4a 100%);
+  box-shadow: 0px 0px 20px rgba(229, 146, 72, 0.2);
+  border-radius: 3em;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: $headline;
+  font-weight: 700;
+  font-size: 1em;
+  height: 3.3em;
+  margin: 0;
+  padding: 0 2.3em;
+  width: max-content;
+  margin-top: 1.5rem;
+  transition: all ease-out 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

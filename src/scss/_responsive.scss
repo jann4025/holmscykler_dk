@@ -1,0 +1,15 @@
+//Laptop L 1200px
+$screen-xl: 1200px;
+@mixin xl {
+  @media (max-width: #{$screen-xl}) {
+    @content;
+  }
+}
+//Laptop L end
+
+$screen-lg: 1055px;
+@mixin lg1055 {
+  @media (max-width: #{$screen-lg}) {
+    @content;
+  }
+}

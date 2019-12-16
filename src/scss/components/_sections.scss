@@ -1,0 +1,53 @@
+#family,
+#cyclist {
+  width: 100vw;
+  height: auto;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  align-items: center;
+  color: $black;
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    max-width: 1200px;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 50px;
+    margin: auto;
+    @include lg1055 {
+      grid-gap: 5px;
+      margin-top: 50px;
+    }
+
+    .text {
+      @include lg1055 {
+        align-self: flex-start;
+      }
+      h1 {
+        $min_font: 18px;
+        $max_font: 36px;
+        @include fluid-type($min_width, $max_width, $min_font, $max_font);
+        max-width: 657px;
+      }
+      p {
+        $min_font: 14px;
+        $max_font: 16px;
+        @include fluid-type($min_width, $max_width, $min_font, $max_font);
+        max-width: 592px;
+        margin-top: 0.5rem;
+      }
+    }
+
+    .image {
+      height: auto;
+      img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
