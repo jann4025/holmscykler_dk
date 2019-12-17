@@ -1,4 +1,5 @@
 button {
+  -webkit-appearance: none;
   background: linear-gradient(90deg, #edb64e 0%, #e79d4a 100%);
   box-shadow: 0px 0px 20px rgba(229, 146, 72, 0.2);
   border-radius: 3em;
@@ -8,7 +9,9 @@ button {
   cursor: pointer;
   font-family: $headline;
   font-weight: 700;
-  font-size: 1em;
+  $min_font: 12px;
+  $max_font: 16px;
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
   height: 3.3em;
   margin: 0;
   padding: 0 2.3em;
@@ -18,5 +21,8 @@ button {
 
   &:hover {
     opacity: 0.8;
+  }
+  @include mxl {
+    margin: auto;
   }
 }

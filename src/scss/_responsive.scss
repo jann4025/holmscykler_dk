@@ -13,3 +13,17 @@ $screen-lg: 1055px;
     @content;
   }
 }
+
+$mobile-xl: 500px;
+@mixin mxl {
+  @media (max-width: #{$mobile-xl}) {
+    @content;
+  }
+}
+
+$mobile-m: 425px;
+@mixin mm {
+  @media (max-width: #{$mobile-m}) {
+    @content;
+  }
+}
