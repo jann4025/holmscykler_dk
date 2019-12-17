@@ -2,6 +2,27 @@
 $min_width: 320px;
 $max_width: 1200px;
 
+@font-face {
+  font-family: 'BLOKK';
+  src: url('/src/fonts/BLOKKNeue-Regular.eot');
+  src: url('/src/fonts/BLOKKNeue-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('/src/fonts/BLOKKNeue-Regular.woff2') format('woff2'),
+    url('/src/fonts/BLOKKNeue-Regular.woff') format('woff'),
+    url('/src/fonts/BLOKKNeue-Regular.otf') format('opentype'),
+    url('/src/fonts/BLOKKNeue-Regular.ttf') format('truetype'),
+    url('/src/fonts/BLOKKNeue-Regular.svg#BLOKKRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: 'BLOKK';
+    src: url('/src/fonts/BLOKKNeue-Regular.svg') format('svg');
+  }
+}
+
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);
 }
@@ -28,5 +49,5 @@ $max_width: 1200px;
   }
 }
 
-$headline: 'Poppins';
-$body: 'Roboto';
+$headline: 'poppins';
+$body: 'roboto';

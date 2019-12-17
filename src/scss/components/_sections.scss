@@ -4,8 +4,8 @@
   height: auto;
   max-width: 1200px;
   margin: auto;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   align-items: center;
   color: $black;
   .content {
@@ -17,6 +17,9 @@
     justify-items: center;
     grid-gap: 50px;
     margin: auto;
+    button {
+      margin-top: 3rem;
+    }
     @include lg1055 {
       grid-gap: 5px;
       margin-top: 50px;
@@ -38,16 +41,91 @@
         @include fluid-type($min_width, $max_width, $min_font, $max_font);
         max-width: 592px;
         margin-top: 0.5rem;
+        font-family: 'BLOKK';
+        color: gray;
       }
     }
 
     .image {
       height: auto;
+      object-fit: fill;
+      width: 100%;
+      height: 100%;
+      // max-width: 500px;
       img {
-        width: 100%;
-        max-width: 600px;
         border-radius: 5px;
+        width: 100%;
       }
+    }
+  }
+}
+
+#cyclist {
+  .image {
+    text-align: right;
+  }
+}
+
+#repairs {
+  width: 100vw;
+  height: auto;
+  min-height: 60vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  align-items: center;
+  // padding: 10rem 0;
+  background: linear-gradient(
+      90deg,
+      rgba(107, 83, 83, 0.8) 20%,
+      rgba(241, 202, 71, 0.5)
+    ),
+    url(https://images.unsplash.com/photo-1527974349915-0d7b47258c02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  .content {
+    max-width: 1200px;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    button {
+      margin-top: 3rem;
+    }
+
+    h1 {
+      $min_font: 50px;
+      $max_font: 50px;
+      @include fluid-type($min_width, $max_width, $min_font, $max_font);
+      // max-width: 657px;
+      font-style: italic;
+      width: fit-content;
+      margin: auto;
+      text-transform: uppercase;
+      color: white;
+      background-image: linear-gradient(
+        90deg,
+        transparent 50%,
+        rgba(234, 158, 66, 1) 0
+      );
+      background-origin: 0;
+      background-size: 200% 50%;
+      background-repeat: repeat-x;
+      background-position: -100% 80%;
+      transition: background-position 0.5s;
+    }
+    p {
+      $min_font: 14px;
+      $max_font: 16px;
+      @include fluid-type($min_width, $max_width, $min_font, $max_font);
+      max-width: 592px;
+      margin-top: 0.5rem;
+      font-family: 'BLOKK';
+      color: white;
+      margin: auto;
     }
   }
 }
