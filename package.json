@@ -20,7 +20,7 @@
   "homepage": "https://github.com/jann4025/holmscykler_dk#readme",
   "dependencies": {
     "@actions/github": "^2.0.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "scss-compile": "^0.1.7"
   },
   "devDependencies": {
